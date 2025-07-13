@@ -3,5 +3,22 @@ target/
 dbt_packages/
 logs/
 
+# Database files
+*.duckdb
+*.db
+
+# Environment & credentials
+.env
+profiles.yml
+*.user.yml
+
 # Python artifacts
-dbt_env
+*.pyc
+__pycache__/
+venv/
+.venv/
+dbt_env/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
