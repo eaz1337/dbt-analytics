@@ -1,7 +1,0 @@
-gog_analytics:
-  target: dev
-  outputs:
-    dev:
-      type: duckdb
-      path: gog_analytics.duckdb
-      schema: gog_data 
