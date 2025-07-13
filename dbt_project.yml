@@ -1,0 +1,30 @@
+
+name: 'gog_analytics'
+version: '0.0.1'
+config-version: 2
+
+profile: 'gog_analytics'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+vars:
+  'target_currency': 'USD'
+
+models:
+  gog_analytics:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts

@@ -1,0 +1,7 @@
+# dbt-generated artifacts
+target/
+dbt_packages/
+logs/
+
+# Python artifacts
+dbt_env
